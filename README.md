@@ -8,11 +8,11 @@ The repository code contains all the scripts required to create the schema, inse
 Note: At this point the scripts provided run only on SQL Server database, which was used during development.
 
 # Schema Diagram
-![Schema Diagram](https://github.com/Jhansi-Lakshmi/SampleDatabase/Schema_Digram.jpg)
+![Schema Diagram](https://github.com/Jhansi-Lakshmi/SampleDatabase/blob/master/Schema_Diagram.JPG)
 
 # Setup 
-Step 1 - Create database schema - Schema_Creation_Script.sql file <br />
-Step 2 - Insert sample or test data - DataLoad_Script file <br />
+Step 1 - Create database schema - SchemaCreationScript.sql file <br />
+Step 2 - Insert sample or test data - DataLoadScript.sql file <br />
 Step 3 - Sample queries written to provide insights in to the data - Queries.sql file <br />
 
 # Support
