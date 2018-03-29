@@ -59,11 +59,11 @@ insert into Employees(FirstName,LastName,MiddleName,BirthDate,Gender,AddressId) 
 
 insert into Employees(FirstName,LastName,MiddleName,BirthDate,Gender,AddressId) values('Samuel','Sheahan',NULL,'01-01-1999','M',15)
 
--- Medical Plans
-insert into MedicalPlans([Type],[Description],DisabledOn) values('Medical','Sample Medical Plan',NULL)
-insert into MedicalPlans([Type],[Description],DisabledOn) values('Dental','Sample Dental Plan',NULL)
-insert into MedicalPlans([Type],[Description],DisabledOn) values('Vision','Sample Vision Plan',NULL)
-insert into MedicalPlans([Type],[Description],DisabledOn) values('Medical','Old Medical Plan',getdate())
+-- Insurance Plans
+insert into InsurancePlans([Type],[Description],DisabledOn) values('Medical','Sample Medical Plan',NULL)
+insert into InsurancePlans([Type],[Description],DisabledOn) values('Dental','Sample Dental Plan',NULL)
+insert into InsurancePlans([Type],[Description],DisabledOn) values('Vision','Sample Vision Plan',NULL)
+insert into InsurancePlans([Type],[Description],DisabledOn) values('Medical','Old Medical Plan',getdate())
 
 -- Employment
 insert into Employment(LocationId,EmployeeId,StartDate,EndDate) Values(1,1,'01-01-2000',NULL)
@@ -80,26 +80,20 @@ insert into Employment(LocationId,EmployeeId,StartDate,EndDate) Values(4,9,'01-0
 insert into Employment(LocationId,EmployeeId,StartDate,EndDate) Values(5,10,'01-01-2017',NULL)
 
 -- Enrollment
-insert into Enrollment(EmployeeId,MedicalPlanId,StartDate,EndDate) Values(1,1,'01-01-2000',NULL)
-insert into Enrollment(EmployeeId,MedicalPlanId,StartDate,EndDate) Values(1,2,'01-01-2000',NULL)
-insert into Enrollment(EmployeeId,MedicalPlanId,StartDate,EndDate) Values(1,3,'01-01-2000',NULL)
+insert into Enrollment(EmployeeId,InsurancePlanId,StartDate,EndDate) Values(1,1,'01-01-2000',NULL)
+insert into Enrollment(EmployeeId,InsurancePlanId,StartDate,EndDate) Values(1,2,'01-01-2000',NULL)
+insert into Enrollment(EmployeeId,InsurancePlanId,StartDate,EndDate) Values(1,3,'01-01-2000',NULL)
 
-insert into Enrollment(EmployeeId,MedicalPlanId,StartDate,EndDate) Values(2,1,'01-01-2002',NULL)
-insert into Enrollment(EmployeeId,MedicalPlanId,StartDate,EndDate) Values(2,2,'01-01-2002',NULL)
-insert into Enrollment(EmployeeId,MedicalPlanId,StartDate,EndDate) Values(2,3,'01-01-2002',NULL)
+insert into Enrollment(EmployeeId,InsurancePlanId,StartDate,EndDate) Values(2,1,'01-01-2002',NULL)
+insert into Enrollment(EmployeeId,InsurancePlanId,StartDate,EndDate) Values(2,2,'01-01-2002',NULL)
+insert into Enrollment(EmployeeId,InsurancePlanId,StartDate,EndDate) Values(2,3,'01-01-2002',NULL)
 
-insert into Enrollment(EmployeeId,MedicalPlanId,StartDate,EndDate) Values(3,1,'01-01-2004',NULL)
-insert into Enrollment(EmployeeId,MedicalPlanId,StartDate,EndDate) Values(3,2,'01-01-2004',NULL)
+insert into Enrollment(EmployeeId,InsurancePlanId,StartDate,EndDate) Values(3,1,'01-01-2004',NULL)
+insert into Enrollment(EmployeeId,InsurancePlanId,StartDate,EndDate) Values(3,2,'01-01-2004',NULL)
 
-insert into Enrollment(EmployeeId,MedicalPlanId,StartDate,EndDate) Values(4,1,'04-01-2010',NULL)
-insert into Enrollment(EmployeeId,MedicalPlanId,StartDate,EndDate) Values(4,3,'04-01-2010',NULL)
+insert into Enrollment(EmployeeId,InsurancePlanId,StartDate,EndDate) Values(4,1,'04-01-2010',NULL)
+insert into Enrollment(EmployeeId,InsurancePlanId,StartDate,EndDate) Values(4,3,'04-01-2010',NULL)
 
-insert into Enrollment(EmployeeId,MedicalPlanId,StartDate,EndDate) Values(5,1,'01-01-2018',NULL)
-insert into Enrollment(EmployeeId,MedicalPlanId,StartDate,EndDate) Values(5,2,'01-01-2018',NULL)
-insert into Enrollment(EmployeeId,MedicalPlanId,StartDate,EndDate) Values(5,3,'01-01-2018',NULL)
-
-
-
-
-
-
+insert into Enrollment(EmployeeId,InsurancePlanId,StartDate,EndDate) Values(5,1,'01-01-2018',NULL)
+insert into Enrollment(EmployeeId,InsurancePlanId,StartDate,EndDate) Values(5,2,'01-01-2018',NULL)
+insert into Enrollment(EmployeeId,InsurancePlanId,StartDate,EndDate) Values(5,3,'01-01-2018',NULL)
