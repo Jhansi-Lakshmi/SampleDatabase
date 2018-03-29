@@ -7,8 +7,8 @@ This schema is used to perform CRUD operations by a web application that is used
 The repository code contains all the scripts required to create the schema, insert sample data and run sample queries to provide insights in to that data. 
 Note: At this point the scripts provided run only on SQL Server database, which was used during development.
 
-# Schema Diagram
-![Schema Diagram](https://github.com/Jhansi-Lakshmi/SampleDatabase/blob/master/Schema_Diagram.JPG)
+# E-R Diagram
+![E-R Diagram](https://github.com/Jhansi-Lakshmi/SampleDatabase/blob/master/Schema_Diagram.JPG)
 
 # Setup 
 Step 1 - Create database schema - SchemaCreationScript.sql file <br />
